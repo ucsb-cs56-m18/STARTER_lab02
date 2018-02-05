@@ -745,7 +745,7 @@ public class PolynomialTest
      */
     @Test
     public void test_lowToHigh_5() {
-	// polynomial: -10x^4 - 20x^3 -40
+	// polynomial: -10x^4 - 20x^3 -40x
 	int [] coeffsHighToLow = new int [] {0, -10, -20, 0, -40, 0};
 	int [] actual = Polynomial.lowToHigh(coeffsHighToLow);
 	int [] expected = new int [] {0, -40, 0, -20, -10};
