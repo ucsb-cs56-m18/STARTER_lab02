@@ -33,7 +33,7 @@ public class Polynomial extends ArrayList<Integer> {
     public static boolean debug = false;
 
     /**
-       no-arg constructor returns a polynomial of degree 1, with value 0
+       no-arg constructor returns a polynomial of degree 0, with value 0
        
      */
     
