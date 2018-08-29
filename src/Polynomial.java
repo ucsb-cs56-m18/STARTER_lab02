@@ -87,16 +87,17 @@ public class Polynomial extends ArrayList<Integer> {
      */
     
     public Polynomial(int [] coeffsHighToLow) {
+		super(coeffsHighToLow.length); // this is the capacity we want
 	
-	if (coeffsHighToLow.length==0) {
-	    coeffsHighToLow = new int [] {0};
-	}
-
-	int [] coeffsLowToHigh = Polynomial.lowToHigh(coeffsHighToLow);
-
-	for (int i=0;i<coeffsLowToHigh.length;i++) {
-	    this.add(i,coeffsLowToHigh[i]);
-	}
+		if (coeffsHighToLow.length==0) {
+			coeffsHighToLow = new int [] {0};
+		}
+		
+		int [] coeffsLowToHigh = Polynomial.lowToHigh(coeffsHighToLow);
+		
+		for (int i=0;i<coeffsLowToHigh.length;i++) {
+			this.add(i,coeffsLowToHigh[i]);
+		}
     }
 
 
